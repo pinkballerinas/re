@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <form id="resumeForm">
+      <h2>Resume Builder</h2>
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required minlength="3"/>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required/>
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" pattern="[0-9]{10}" required/>
+
+      <label for="summary">Professional Summary</label>
+      <textarea id="summary" required></textarea>
+
+      <label for="skills">Skills (comma separated)</label>
+      <input type="text" id="skills" required/>
+
+      <label for="education">Education</label>
+      <input type="text" id="education" required/>
+
+      <label for="experience">Experience</label>
+      <input type="text" id="experience" required/>
+
+      <button type="submit">Generate Resume</button>
+    </form>
+
+    <div id="resume" class="hidden">
+      <h2 id="r-name"></h2>
+      <p><strong>Email:</strong> <span id="r-email"></span></p>
+      <p><strong>Phone:</strong> <span id="r-phone"></span></p>
+      <p><strong>Summary:</strong> <span id="r-summary"></span></p>
+      <p><strong>Skills:</strong></p>
+      <ul id="r-skills"></ul>
+      <p><strong>Education:</strong> <span id="r-education"></span></p>
+      <p><strong>Experience:</strong> <span id="r-experience"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
