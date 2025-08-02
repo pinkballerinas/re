@@ -6,37 +6,48 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
-  background: #f4f4f4;
+  background: #ffe6f0;
 }
 
 .container {
   max-width: 800px;
   margin: auto;
-  background: white;
+  background: #fff0f5;
   padding: 20px;
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 182, 193, 0.5)
 }
 
 form, #resume {
   display: flex;
   flex-direction: column;
 }
+h2 {
+  color: #d63384; 
+  text-align: center;
+}
+
 
 label {
   margin-top: 10px;
+   color: #a94470;
+  font-weight: bold;
+
 }
 
 input, textarea {
   padding: 10px;
   margin-top: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #ffc0cb;
   border-radius: 5px;
+   background-color: #fff;
+
 }
 
 button {
   margin-top: 20px;
   padding: 12px;
-  background-color: #007BFF;
+  background-color:#ff69b4;
   color: white;
   border: none;
   border-radius: 6px;
@@ -45,7 +56,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #ff1493;
 }
 
 .hidden {
@@ -54,9 +65,9 @@ button:hover {
 
 #resume {
   margin-top: 30px;
-  background: #f0f8ff;
+  background: #ffe4ec;
   padding: 20px;
-  border-left: 5px solid #007BFF;
+  border-left: 5px solid #ff69b4;
   border-radius: 5px;
 }
 
